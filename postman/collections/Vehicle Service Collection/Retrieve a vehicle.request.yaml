@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{baseUrl}}/vehicles/:id"
+method: GET
+headers:
+  Accept: application/json
+pathVariables:
+  - key: id
+    value: "1"
+    description: ""
+examples: ./.resources/Retrieve a vehicle.resources/examples
+order: 2000
+scripts:
+  - type: afterResponse
+    language: text/javascript
+    code: |-
+      pm.test("Status code is 200", function () {
+          pm.response.to.have.status(200);
+      });
