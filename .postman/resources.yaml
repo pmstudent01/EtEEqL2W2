@@ -1,5 +1,8 @@
 workspace:
   id: 608dd3b1-d907-417c-aa1d-38cf8e59593c
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
 cloudResources:
   specs:
     ../postman/specs/Vehicle Service Spec/index.yaml: 1f393edf-0b1f-4a23-8cd0-515310a42ca9
@@ -8,8 +11,8 @@ cloudResources:
     ../postman/collections/Vehicle Service Collection: 59236283-0a07c99e-4707-4ec3-89d2-eefa6bea1887
   environments:
     ../postman/environments/Mock Environment.environment.yaml: 59236224-8c21da3c-9373-4a24-9f3e-314262bd56db
-    ../postman/environments/Local – Agent Mode.environment.yaml: 59236224-9614132a-2763-42e2-a50c-bcd6acfd9ef5
     ../postman/environments/Local.environment.yaml: 59236224-8a15b85e-1795-4e2d-b170-28d2baee841c
+    ../postman/environments/Local - Agent Mode.environment.yaml: 59236224-9614132a-2763-42e2-a50c-bcd6acfd9ef5
   globals:
     ../postman/globals/workspace.globals.yaml: 96cf8d8c-5c19-429e-81d7-b4995d2b041d
   documents:
